@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+
+
+
+<script>
+function sumNum() {
+    var sum=0;
+    var x = prompt("Please enter First number:","0");
+    var y = prompt("Please enter Second number:","0");
+    var num1 = parseInt(x);
+    var num2 = parseInt(y);
+    console.log("num1"+num1+"num2"+num2);
+    if ((x == null) || (y == null) || (x == "") || (y=="")) {
+        alert( "User cancelled the prompt.");
+    } 
+    else {
+    	if(!isNaN(num1)&&!isNaN(num2)){
+        sum=num1+num2;
+  
+        alert(num1+" + "+num2+" = "+sum);
+    }
+        else{
+        	alert( "Please enter number");
+        }
+
+    }
+    
+}
+sumNum();
+</script>
+	
+	
+</body>
+</html>

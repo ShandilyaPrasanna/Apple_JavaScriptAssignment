@@ -1,0 +1,71 @@
+
+<html>
+<head></head>
+<body>
+<script>
+val=0
+
+function calc(a)
+{
+   if((val=="0")||(val=="INVALID INPUT"))
+    val=a
+   else
+    {
+     val=val+a
+    }
+
+   if(a=="=")
+    {
+     try
+      {
+       val=eval(cal.display.value)
+      }
+     catch(err)
+      {
+         val="INVALID INPUT"
+      }
+     
+     }
+  cal.display.value=val
+
+  if(a=="c")
+   val=0
+   }
+
+
+</script>
+
+<form Name="cal">
+<table border=2>
+<tr>
+<td colspan=4><input type=text Name="display" value=0></td>
+</tr>
+<tr>
+<td><input type=button value="0" OnClick=calc("0")></td>
+<td><input type=button value="1" OnClick=calc("1")></td>
+<td><input type=button value="2" OnClick=calc("2")></td>
+<td><input type=button value="+" OnClick=calc("+")></td>
+</tr>
+<tr>
+<td><input type=button value="3" OnClick=calc("3")></td>
+<td><input type=button value="4" OnClick=calc("4")></td>
+<td><input type=button value="5" OnClick=calc("5")></td>
+<td><input type=button value="-" OnClick=calc("-")></td>
+</tr>
+<tr>
+<td><input type=button value="6" OnClick=calc("6")></td>
+<td><input type=button value="7" OnClick=calc("7")></td>
+<td><input type=button value="8" OnClick=calc("8")></td>
+<td><input type=button value="x" Onclick=calc("*")></td>
+</tr>
+<tr>
+<td><input type=button value="9" OnClick=calc("9")></td>
+<td><input type=button value="C" OnClick=calc("c")></td>
+<td><input type=button value="=" OnClick=calc("=")></td>
+<td><input type=button value="/" Onclick=calc("/")></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+h1 {  
+	color: blue;
+	margin-top:100px;
+margin-left: 120px;  
+}  
+body{
+	background-color: orange;
+}
+form li {  
+list-style: none;  
+margin-bottom: 5px;  
+}  
+div{
+	margin-left:400px;
+}
+  
+form ul li label{  
+float: left;  
+clear: left;  
+width: 100px;  
+text-align: right;  
+margin-right: 10px;  
+font-family:Verdana, Arial, Helvetica, sans-serif;  
+font-size:14px;  
+}  
+  
+form ul li input, select, span {  
+float: left;  
+margin-bottom: 10px;  
+
+}  
+
+input[type="text"] {
+    width: 350px;
+}
+
+form textarea {  
+float: left;  
+width: 350px;  
+height: 150px;  
+}  
+  
+[type="submit"] {  
+clear: left;  
+color:blue;
+margin: 20px 0 0 230px;  
+font-size:18px  
+}  
+  
+p {  
+	margin-top: 20px;
+margin-left: 120px;  
+font-weight: bold;  
+}  

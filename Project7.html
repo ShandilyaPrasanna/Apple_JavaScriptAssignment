@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+<body>
+<button onclick="causeFunction()">Donate for a cause</button>
+
+
+<script>
+function causeFunction() {
+
+    var x = prompt("Please enter Denotion Amount","0");
+    var num1 = parseFloat(x);
+
+    
+    if ((x == null) ||  (x == "") ) {
+        alert( "User cancelled the prompt.");
+    } 
+    else {
+    	if(!isNaN(num1)){
+        
+         var Amt=Math.round(num1);
+        alert("Amount denoted by you "+Amt);
+    }
+        else{
+        	alert( "Please enter number");
+        }
+
+    }
+    
+}
+</script>
+	
+	
+</body>
+</html>

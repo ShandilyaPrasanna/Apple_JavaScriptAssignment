@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+<button onClick="Continue()">Click To Change color</button>
+
+<h1> This is Foreground color </h1>
+<script>
+
+function Continue(){
+var bgc="";
+var fgc="";
+
+
+
+     bgc = prompt("Please enter backgound Color (no to exit) ","black");
+     fgc = prompt("Please enter foregound Color (no to exit)","white");
+  
+    if ((bgc == null) || (fgc == null) || (bgc == "") || (fgc==""))
+     {
+        alert( "User cancelled the prompt.");
+     }
+    else
+     {
+    	document.fgColor=fgc;
+    	document.body.style.backgroundColor =bgc;
+
+    }
+    
+
+
+}
+</script>
+</body>
+</html>
